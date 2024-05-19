@@ -21,7 +21,6 @@ export default function RecordingResult({ session }) {
   const isQuestion = localStorage.getItem("isQuestion");
   const [tablet, setTablet] = useLocalStorage("tablet", {});
   const [text, setText] = useState(transcript);
-  const [label, setLabel] = useState(0);
 
   const handleRecordAgainClick = () => {
     handlePostRequest().then((r) => navigate("/patient/recording"));
@@ -31,32 +30,20 @@ export default function RecordingResult({ session }) {
     navigate("/patient/home");
   };
 
-  const handleFinishClick = () => {
-    handlePostRequest().then((r) => navigate("/patient/result"));
-    handleAI();
-  };
-
-  async function handleAI(){
-    try {      
-      const aiResult = await ai(text);
-      if (aiResult.length > 0 && aiResult[0].label !== undefined) {
-        setLabel(aiResult[0].label);  
-        console.log(aiResult);
-        console.log(aiResult[0].label); 
-      } else {
-        console.error('No results or label is undefined');
-      }
-    } catch (error) {
-      console.error('Error in processing AI or navigating:', error);
-    }
+  const handleFinishClick = async() => {
+    await handlePostRequest().then((r) => navigate("/patient/result"));
   };
 
   async function handlePostRequest() {
     try {
+      const aiResult = await ai(text);
+      console.log(aiResult);
+      console.log(aiResult[0].label); 
+      
       if (isQuestion === "true") {
-        await postRequest(session, text, true, 0, tablet.id, label);
+        await postRequest(session, text, true, 0, tablet.id, aiResult[0].label);
       } else {
-        await postRequest(session, text, false, 0, tablet.id, label);
+        await postRequest(session, text, false, 0, tablet.id, aiResult[0].label);
       }
     } catch (error) {
       console.error(error);
