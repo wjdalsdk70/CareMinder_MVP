@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="705c982a-fc4a-4646-9e69-913c4d72a412" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/../frontend/web/src/pages/Nurse/Admin/AddArea/AddArea.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../frontend/web/src/pages/Nurse/Admin/AddArea/AddArea.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../frontend/web/src/pages/Nurse/Admin/EditArea/EditArea.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../frontend/web/src/pages/Nurse/Admin/EditArea/EditArea.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../frontend/web/src/pages/Nurse/Home/CompletedPatientRequest/CompletedPatientRequest.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../frontend/web/src/pages/Nurse/Home/CompletedPatientRequest/CompletedPatientRequests.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../frontend/web/src/components/NurseHeader/NurseHeader.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/../frontend/web/src/components/NurseHeader/NurseHeader.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../frontend/web/src/components/NurseSidebar/NurseSidebar.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/../frontend/web/src/components/NurseSidebar/NurseSidebar.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../frontend/web/src/components/PatientHistory/PatientHistory.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/../frontend/web/src/components/PatientHistory/PatientHistory.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../frontend/web/src/components/Request/Request.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/../frontend/web/src/components/Request/Request.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../frontend/web/src/lib/api.js" beforeDir="false" afterPath="$PROJECT_DIR$/../frontend/web/src/lib/api.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../frontend/web/src/pages/App/App.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/../frontend/web/src/pages/App/App.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../frontend/web/src/pages/Nurse/Admin/Settings/Settings.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/../frontend/web/src/pages/Nurse/Admin/Settings/Settings.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../frontend/web/src/pages/Nurse/Home/Requests/viewRequest/viewRequest.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/../frontend/web/src/pages/Nurse/Home/Requests/viewRequest/viewRequest.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../frontend/web/src/pages/Nurse/Login/Login.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/../frontend/web/src/pages/Nurse/Login/Login.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../frontend/web/src/pages/Patient/Login/Login.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/../frontend/web/src/pages/Patient/Login/Login.jsx" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="DjangoConsoleOptions" custom-start-script="import sys; print('Python %s on %s' % (sys.version, sys.platform))&#10;import django; print('Django %s' % django.get_version())&#10;sys.path.extend([WORKING_DIR_AND_PYTHON_PATHS])&#10;if 'setup' in dir(django): django.setup()&#10;import django_manage_shell; django_manage_shell.run(PROJECT_ROOT)">
+    <option name="myCustomStartScript" value="import sys; print('Python %s on %s' % (sys.version, sys.platform))&#10;import django; print('Django %s' % django.get_version())&#10;sys.path.extend([WORKING_DIR_AND_PYTHON_PATHS])&#10;if 'setup' in dir(django): django.setup()&#10;import django_manage_shell; django_manage_shell.run(PROJECT_ROOT)" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Python Script" />
+      </list>
+    </option>
+  </component>
+  <component name="FlaskConsoleOptions" custom-start-script="import sys&#10;sys.path.extend([WORKING_DIR_AND_PYTHON_PATHS])&#10;from flask.cli import ScriptInfo&#10;locals().update(ScriptInfo(create_app=None).load_app().make_shell_context())&#10;print(&quot;Python %s on %s\nApp: %s [%s]\nInstance: %s&quot; % (sys.version, sys.platform, app.import_name, app.env, app.instance_path))">
+    <envs>
+      <env key="FLASK_APP" value="app" />
+    </envs>
+    <option name="myCustomStartScript" value="import sys&#10;sys.path.extend([WORKING_DIR_AND_PYTHON_PATHS])&#10;from flask.cli import ScriptInfo&#10;locals().update(ScriptInfo(create_app=None).load_app().make_shell_context())&#10;print(&quot;Python %s on %s\nApp: %s [%s]\nInstance: %s&quot; % (sys.version, sys.platform, app.import_name, app.env, app.instance_path))" />
+    <option name="myEnvs">
+      <map>
+        <entry key="FLASK_APP" value="app" />
+      </map>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 6
+}</component>
+  <component name="ProjectId" id="2V1aXN8vVZLxFhZQN8XvPZOKZd0" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "git-widget-placeholder": "Merging main",
+    "last_opened_file_path": "C:/Users/greg1/OneDrive/Dokumente/GitHub/CareMinder/backend",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "settings.editor.selected.configurable": "com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable",
+    "vue.rearranger.settings.migration": "true"
+  }
+}]]></component>
+  <component name="RunManager" selected="Python.main">
+    <configuration name="main" type="PythonConfigurationType" factoryName="Python" nameIsGenerated="true">
+      <module name="backend" />
+      <option name="ENV_FILES" value="" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/main.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="backend" type="Python.DjangoServer" factoryName="Django server">
+      <module name="backend" />
+      <option name="ENV_FILES" value="" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="launchJavascriptDebuger" value="false" />
+      <option name="port" value="8000" />
+      <option name="host" value="" />
+      <option name="additionalOptions" value="" />
+      <option name="browserUrl" value="" />
+      <option name="runTestServer" value="false" />
+      <option name="runNoReload" value="false" />
+      <option name="useCustomRunCommand" value="false" />
+      <option name="customRunCommand" value="" />
+      <method v="2" />
+    </configuration>
+  </component>
+  <component name="SharedIndexes">
+    <attachedChunks>
+      <set>
+        <option value="bundled-python-sdk-7a29c1521ef0-c986f194a52a-com.jetbrains.pycharm.pro.sharedIndexes.bundled-PY-233.11799.298" />
+      </set>
+    </attachedChunks>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="705c982a-fc4a-4646-9e69-913c4d72a412" name="Changes" comment="" />
+      <created>1694006080769</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1694006080769</updated>
+      <workItem from="1694006081777" duration="878000" />
+      <workItem from="1694007991632" duration="3296000" />
+      <workItem from="1694011515245" duration="1565000" />
+      <workItem from="1694544807269" duration="2713000" />
+      <workItem from="1695059508962" duration="31000" />
+      <workItem from="1698584122604" duration="10851000" />
+      <workItem from="1701345282966" duration="1717000" />
+      <workItem from="1706393180707" duration="1193000" />
+      <workItem from="1706449413125" duration="10000" />
+      <workItem from="1706449492806" duration="17000" />
+      <workItem from="1706455549128" duration="158000" />
+      <workItem from="1706542672422" duration="10000" />
+      <workItem from="1706542718658" duration="148000" />
+      <workItem from="1706558516421" duration="57000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+</project>

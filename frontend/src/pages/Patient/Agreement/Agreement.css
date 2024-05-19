@@ -1,0 +1,94 @@
+.agreement {
+    background: linear-gradient(#5d6dbe, #5d6dbe00);
+    height: 100vh;
+    width: 100vw;
+    position: relative;
+    overflow: hidden;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.agreement__logo {
+    display: flex;
+    position: absolute;
+    mix-blend-mode: multiply;
+    width: 100%;
+
+    bottom: -55%;
+    left: -15%;
+}
+
+.agreement .container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+    height: 80%;
+    width: 80%;
+
+    background-color: var(--background-glass);
+    backdrop-filter: var(--background-glass-blur);
+
+    text-align: center;
+}
+
+.agreement .container h1 {
+    font-size: 4rem;
+    color: white;
+
+    padding: 64px;
+}
+
+.agreement .container h2 {
+    font-size: 2.5rem;
+    color: white;
+
+    padding-top: 32px;
+}
+
+.agreement .container p {
+    font-size: 2rem;
+    color: white;
+
+    padding: 6px;
+}
+
+.agreement .container label {
+    font-size: 2rem;
+    color: white;
+
+    padding: 6px;
+}
+
+.agreement .agreement-checkbox {
+    display: flex;
+    margin: 16px;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.agreement .agreement-checkbox input[type="checkbox"] {
+    width: 20px;
+    height: 20px;
+    margin-left: 16px;
+    align-items: center;
+}
+
+.agreement .agreement-checkbox input[type="text"] {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+}
+
+.agreement .container button {
+    width: 200px;
+    height: 64px;
+
+    margin-top: 32px;
+}
+
+

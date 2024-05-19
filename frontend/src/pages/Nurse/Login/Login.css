@@ -1,0 +1,126 @@
+.login {
+  background: linear-gradient(#5d6dbe, #5d6dbe00);
+  width: 100vw;
+  height: 100vh;
+  position: relative;
+  overflow: hidden;
+}
+
+.login__form {
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+.login__form fieldset {
+  display: flex;
+  flex-direction: column;
+  border: none;
+  gap: 4px;
+}
+
+input[type=password] {
+  font-family: "나눔스퀘어 아닐때 쓸 글꼴";
+
+  &::placeholder {
+      font-family: "NanumSquare";
+  }
+}
+
+.login__form fieldset label {
+  color: var(--text);
+  font-size: 24px;
+}
+
+
+.login__form fieldset input {
+  border: none;
+  outline: none;
+  background-color: white;
+  color: var(--text);
+  font-size: 24px;
+  padding: 8px;
+  width: 100%;
+}
+
+.login__form input[type="submit"] {
+  border: none;
+  outline: none;
+  font-size: 24px;
+  padding: 8px;
+  color: var(--text-alt);
+  background-color: #5d6dbe;
+}
+
+.login__form input[type="submit"]:hover {
+  filter: brightness(90%);
+}
+
+.login__form input[type="submit"]:active {
+  opacity: 80%;
+  filter: brightness(80%);
+}
+
+.login__circle,
+.login__container {
+  width: 150vh;
+  height: auto;
+  aspect-ratio: 1/1;
+  position: absolute;
+  top: -25%;
+  right: 0;
+  transform: translateX(33%);
+}
+
+.login__container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.login__container > div {
+  margin-right: 23%;
+  width: 460px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 68px;
+  flex-wrap: nowrap;
+  text-wrap: nowrap;
+}
+
+.login__circle {
+  border-radius: 100%;
+  background-color: var(--background-glass);
+  backdrop-filter: blur(30px);
+  -webkit-backdrop-filter: blur(30px);
+}
+
+.login__title,
+.login__subtitle {
+  color: var(--text-alt);
+}
+
+.login__title {
+  word-wrap: break-word;
+  white-space: nowrap;
+  font-size: 3rem;
+  letter-spacing: 14px;
+}
+
+.login__subtitle {
+  font-size: 2.3rem;
+  font-weight: 100;
+}
+
+.login__logo {
+  position: absolute;
+  mix-blend-mode: multiply;
+  bottom: -580px;
+  left: -300px;
+  width: 2500px;
+}

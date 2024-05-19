@@ -1,0 +1,91 @@
+.userlist-container
+{
+    padding: var(--header-height);
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+#add-info
+{
+    margin-left: 1rem;
+    margin-top: 3.5vmin;
+}
+
+#userlist-add
+{
+    display: flex;
+    justify-content: center;
+    margin-right: -3.5rem;
+}
+
+#userlist
+{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+#list-items
+{
+    display: flex;
+    flex-direction: row;
+    background-color: #777777;
+    border: 2px outset #5a5a5a;
+    width: 50vmin;
+    padding-top: 1vmin;
+    padding-bottom: 1vmin;
+    padding-left: 5vmin;
+    margin-top: 3vmin;
+    text-align: center;
+}
+
+#list-items h2
+{
+    color: white;
+}
+
+.item-number, .number-value
+{
+    width: 35%;
+}
+
+.item-name, .name-value
+{
+    width: 65%;
+}
+
+
+#userlist-rows
+{
+    overflow-y: auto;
+    overflow-x: hidden;
+    height: 45vmin;
+}
+
+.list-item
+{
+    display: flex;
+    flex-direction: row;
+    width: 50vmin;
+    text-align: center;
+    padding-top: 0.5vmin;
+    padding-bottom: 0.5vmin;
+    padding-left: 5vmin;
+}
+
+.userlist-line-top
+{
+    margin-top: 1vmin;
+    width: 50vmin;
+}
+
+.userlist-line-bottom
+{
+    margin-bottom: 1vmin;
+    width: 50vmin;
+}

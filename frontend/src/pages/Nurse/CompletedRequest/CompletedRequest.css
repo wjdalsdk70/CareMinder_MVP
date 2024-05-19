@@ -1,0 +1,98 @@
+.container {
+    padding: var(--header-height);
+    height: 100vh;
+    width: 100vw;
+    overflow: scroll;
+}
+
+.data-form {
+    display: flex;
+    justify-content: center;
+    align-items: start;
+    height: 100%;
+}
+
+.table {
+    margin-top: 2.5rem;
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.completedRequestHeader, .row {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    font-size: 1.3rem;
+}
+
+.completedRequestHeader, .row .itemRequest {
+    width: 74%;
+    padding: 0 1rem;
+
+}
+
+.completedRequestHeader, .row .item {
+    width: 16%;
+    padding: 0.5rem 1rem;
+
+}
+
+.completedRequestHeader, .row .itemTime {
+    width: 10%;
+    padding: 0.5rem 1rem;
+
+}
+
+.completedRequestHeader {
+    background-color: #383838;
+    font-weight: bold;
+    width: 100%
+}
+
+.completedRequestHeader .itemRequest {
+    width: 74%;
+    color: white;
+    font-size: 1.3rem;
+    padding: 0.5rem 1rem;
+
+}
+
+.completedRequestHeader .item {
+    width: 16%;
+    color: white;
+    font-size: 1.3rem;
+    padding: 0.5rem 1rem;
+}
+
+.completedRequestHeader .itemTime {
+    width: 10%;
+    color: white;
+    font-size: 1.3rem;
+    padding: 0.5rem 1rem;
+}
+
+
+.completedRequestHeader .row:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+.completedRequestHeader .row > p, .row > button {
+    flex: 1;
+    text-align: left;
+}
+
+.completedRequestHeader .row > button {
+    background-color: #4CAF50; /* Adjust color as needed */
+    color: white;
+    border: none;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+}
+
+.completedRequestHeader.row > button:hover {
+    background-color: #45a049; /* Adjust color as needed */
+}

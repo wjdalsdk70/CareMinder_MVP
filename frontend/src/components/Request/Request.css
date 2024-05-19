@@ -1,0 +1,156 @@
+/* PatientHistoryRequest Component CSS */
+
+.request-item.Processing,
+.request-item .Processing {
+  --color: var(--request);
+  --color-transparent: var(--request-transparent);
+}
+
+.request-item.Waiting,
+.request-item .Waiting {
+  --color: var(--question);
+  --color-transparent: var(--question-transparent);
+}
+
+.request-item.Finished,
+.request-item .Finished {
+  --color: var(--background-grey);
+  --color-transparent: var(--background-grey-transparent);
+}
+
+.request-item .top-container {
+  background: var(--color);
+  border-radius: 10px 10px 0px 0px;
+}
+
+.request-item .chat-container {
+  background: var(--color-transparent);
+  backdrop-filter: opacity(0.5);
+  border-radius: 0px 0px 10px 10px;
+  opacity: 9;
+}
+
+.request-item {
+  user-select: none;
+  border-radius: 10px;
+  border: 2px solid var(--color);
+  margin: 0.25rem;
+}
+
+.request-item .top-container {
+  position: relative;
+  display: flex;
+  padding: 0.7rem;
+  align-items: center;
+}
+
+.request-item .icon-container {
+  display: flex;
+  align-items: center;
+  margin-right: 1rem;
+  max-height: 5rem;
+  color: white;
+}
+
+.request-item .info-container {
+  display: flex;
+  flex-grow: 1;
+  flex-direction: row;
+  justify-content: space-between;
+  vertical-align: bottom;
+}
+
+.request-item .text-container {
+  margin-top: 1rem;
+  background-color: var(--text-background-response);
+  padding: 0.3rem;
+}
+
+.request-item .content-container {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.request-item .time {
+  text-align: right;
+  align-self: flex-end;
+}
+
+.request-item .chat-container {
+  width: 100%;
+}
+
+.request-item .chat-container__messages {
+  padding: 1rem 1rem 0.5rem 1rem;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  width: 100%;
+  max-width: 100%;
+}
+
+.request-item .chat-container__input {
+  position: relative;
+  padding: 1rem;
+}
+
+.request-item .chat-container__input input {
+  width: 100%;
+  background-color: var(--text-background-lighter);
+  border: none;
+  font: "NanumSquare";
+  text-align: left;
+  padding: 0.6rem;
+  padding-right: 3rem;
+}
+
+.request-item .chat-container__input button {
+  background-color: transparent;
+  border: none;
+  outline: none;
+  color: rgb(97, 97, 97);
+  padding: 0.5rem;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  right: 1rem;
+}
+
+.request-item .chat-container.closed {
+  display: none;
+}
+
+.request-item .chat-item {
+  max-width: 100%;
+  /* width: max-content; */
+  text-wrap: wrap;
+}
+
+.request-item .patient-false {
+  background-color: var(--text-background-response);
+  border-radius: 10px 10px 10px 0px;
+  padding: 0.5rem;
+  align-self: flex-start;
+  margin-bottom: 0.5rem;
+}
+
+.request-item .patient-true {
+  background-color: var(--color);
+  border-radius: 10px 10px 0px 10px;
+  padding: 0.5rem;
+  align-self: flex-end;
+  margin-bottom: 0.5rem;
+}
+
+.request-item .chat-time {
+  color: var(--text);
+  font-size: small;
+}
+
+.request-item .clearfix::after {
+  content: "";
+  display: table;
+  clear: both;
+}

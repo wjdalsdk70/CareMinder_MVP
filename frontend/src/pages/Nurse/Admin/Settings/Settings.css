@@ -1,0 +1,181 @@
+.settings__home {
+    padding: var(--header-height);
+    height: 100vh;
+    width: 100vw;
+    overflow-y: scroll;
+    overflow-x: hidden;
+
+}
+
+.settings__home form {
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+    width: 100%;
+}
+
+.settings__home .buttons {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    gap: 32px;
+}
+
+.settings__home .buttons input {
+    padding: 10px 0;
+    width: 180px;
+    border-radius: 6px;
+    border: 1px solid var(--text-background-dark);
+    background-color: transparent;
+    font-weight: bold;
+    color: var(--text-color-lighter);
+    font-size: 1.2rem;
+    cursor: pointer;
+}
+
+.settings__home .buttons input.save {
+    color: white;
+    background-color: var(--text-background-dark);
+}
+
+.settings__home .container {
+    display: flex;
+    justify-content: flex-start;
+    align-content: center;
+    flex-direction: row;
+    height: auto;
+    width: 100%;
+    padding: 35px;
+    gap: 64px;
+}
+
+.settings__home .column {
+    display: flex;
+    justify-content: flex-start;
+    align-content: center;
+    flex-direction: column;
+    gap: 32px;
+    height: 100%;
+    width: 100%;
+    user-select: none;
+}
+
+.settings__home .row {
+    display: flex;
+    justify-content: flex-start;
+    align-content: center;
+    flex-direction: row;
+}
+
+
+.settings__home .row .on-off {
+    width: 100%;
+
+    display: flex;
+    flex-direction: row;
+
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+.settings__home .row .row-container{
+    display: flex;
+    justify-content: flex-start;
+    align-content: center;
+    gap: 32px;
+    padding: 10px;
+    width: 100%	;
+}
+
+.settings__home .column{
+    flex-direction: column;
+}
+
+.settings__home .row{
+    flex-direction: row;
+}
+
+
+.settings__home .row-container .space-evenly{
+    justify-content: space-evenly;
+}
+
+.settings__home__textarea {
+    width: 100%;
+    background-color: var(--text-background-lighter);
+    border-radius: 10px;
+    line-height: 1.5; /* Adjust the line height as needed */
+}
+
+.settings__home .tabletslist-add
+{
+    display: flex;
+    justify-content: center;
+
+}
+
+.settings__home .tabletslist-add .tabletslist
+{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.settings__home .tabletslist-add .tabletslist .list-items
+{
+    display: flex;
+    flex-direction: row;
+    background-color: #777777;
+    border: 2px outset #5a5a5a;
+    width: 50vmin;
+    padding-top: 1vmin;
+    padding-left: 5vmin;
+    padding-bottom: 1vmin;
+    margin-top: 3vmin;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    gap: 7vmin;
+}
+
+.settings__home .tabletslist-add .tabletslist .list-items h2
+{
+    color: white;
+}
+
+.settings__home .tabletslist-add .list-items .tabletslist-add.tabletslist .list-items .item-number, .item-name ,.settings__home .tabletslist-add .userlist-rows .number-value
+{
+    width: 50%;
+}
+
+
+.settings__home .tabletslist-add .userlist-rows
+{
+    overflow-y: auto;
+    overflow-x: hidden;
+}
+
+.settings__home .list-item
+{
+    display: flex;
+    flex-direction: row;
+    width: 50vmin;
+    text-align: center;
+    padding-top: 0.5vmin;
+    padding-bottom: 0.5vmin;
+    padding-left: 5vmin;
+}
+
+.settings__home .userlist-line-top
+{
+    margin-top: 1vmin;
+    width: 50vmin;
+}
+
+.settings__home .userlist-line-bottom
+{
+    margin-bottom: 1vmin;
+    width: 50vmin;
+}

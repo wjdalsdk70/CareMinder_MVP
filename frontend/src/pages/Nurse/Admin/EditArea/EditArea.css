@@ -1,0 +1,177 @@
+.edit-user{
+    padding: var(--header-height);
+    height: 100vh;
+    width: 100vw;
+    overflow: scroll;
+}
+
+
+::placeholder
+{
+    color: rgb(150, 150, 150);
+    opacity: 1; /* Firefox */
+    font-size: 1.5vh;
+}
+:-ms-input-placeholder
+{
+    /* Internet Explorer 10-11 */
+    color: rgb(150, 150, 150);
+    font-size: 1.5vh;
+}
+
+::-ms-input-placeholder
+{
+    /* Microsoft Edge */
+    color: rgb(150, 150, 150);
+    font-size: 1.5vh;
+}
+
+html
+{
+    height: 100%;
+}
+
+a
+{
+    font-size: 4vmin;
+}
+
+form
+{
+    display: flex;
+    flex-direction: column;
+    gap: 2.5svw;
+    width: min-content;
+}
+
+input
+{
+    background-color: transparent;
+    border: none;
+    border-bottom: 0.15svw solid rgb(150, 150, 150);
+    text-align: center;
+    width: 20vmin;
+    padding-bottom: 0.5vmin;
+    margin-bottom: 0.15svw;
+}
+
+input:focus
+{
+    margin-bottom: 0;
+    border-bottom: 0.3svw solid rgb(80, 80, 80);
+}
+
+span
+{
+    color: red;
+}
+
+.change_data_button
+{
+    width: 18vmin;
+    height: 3vmin;
+    border: 1px outset #383838;
+    margin-left: 2vmin;
+    background-color: rgb(245, 245, 245);
+    font-size: large;
+    transition-duration: 0.5s;
+}
+
+.change_data_button:hover
+{
+    cursor: pointer;
+    color: rgb(245, 245, 245);
+    background-color: #383838;
+    transition-duration: 0.5s;
+}
+
+.cancel_button
+{
+    border: 1px outset #383838;
+    width: 20vmin;
+    height: 4.5vmin;
+    background-color: rgb(245, 245, 245);
+    border-radius: 10px;
+    font-size: large;
+    transition-duration: 0.5s;
+}
+
+.cancel_button:hover
+{
+    cursor: pointer;
+    background-color: #383838;
+    color: #ffffff;
+    transition-duration: 0.5s;
+}
+
+.save_button
+{
+    border: 1px outset #383838;
+    width: 20vmin;
+    height: 4.5vmin;
+    background-color: #383838;
+    border-radius: 10px;
+    color: #ffffff;
+    font-size: large;
+    transition-duration: 0.5s;
+}
+
+.save_button:hover
+{
+    cursor: pointer;
+    background-color: rgb(245, 245, 245);
+    color: #383838;
+    transition-duration: 0.5s;
+}
+
+.title
+{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-top: 4vmin;
+}
+
+.title h1
+{
+    margin-left: 1vmin;
+}
+
+#bottom_buttons
+{
+    display: flex;
+    justify-content: center;
+    gap: 4vw;
+    margin-top: 10vmin;
+}
+
+#data_form
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+
+*:focus {
+    outline: none;
+}
+
+.input_field
+{
+    display: flex;
+    flex-direction: row;
+}
+
+.input_field p
+{
+    text-align: center;
+    width: 12vmin;
+}
+
+.edituser-container
+{
+    padding: var(--header-height);
+    height: 100vh;
+    width: 100vw;
+}

@@ -1,0 +1,127 @@
+{
+  "patient": {
+    "agreementConsentHeader": "Agreement of the terms and conditions",
+    "consentToCollectionHeader": "[Consent to collect personal information]",
+    "consentToCollectionText": "To use this service, the information subject's separate consent to collect information is required. The type of information you collect is limited to anonymized requests and feedback data. If you do not agree to collect information, your use of the service will be restricted.",
+
+    "consentResponsibilityHeader": "[Consent to responsibility]",
+    "consentResponsibilityText": "This service is designed to enhance the convenience of patients' hospital use and is not applicable to medical devices and medical aids. We encourage you to avoid using this service for medical practice purposes, such as conveying your condition and symptoms and treating diseases, and we are not responsible for any negligence caused by this.",
+
+    "agreeTermsAndConditions": "Agree to terms and conditions:",
+    "agreementContinueButton": "Continue",
+
+    "patientLoginInStatusSuccess": "Login Successful",
+    "patientLoginInStatusError": "Login Failed",
+    "patientLoginInStatusToManyAttempts": "Too Many Attempts",
+
+    "patientSetUpHeader": "Hello, I’m CareMinder",
+    "patientSetUpTablet": "Please choose the tablet and login with an account.",
+    "patientSetUpTabletExplanation": "This is used to assign the tablet to the in the hospital.",
+    "patientSetUpModifyExplanation": "The attributes can then be modified through the Preferences menu on the nurse's screen.",
+
+    "patientSetUpUsername": "Username",
+    "patientSetUpPassword": "Password",
+    "patientSetUpSelectTablet": "Select a tablet",
+    "patientSetUpLogin": "Login",
+
+    "questionTitle": "If you have any question",
+    "questionSubtitle": "Please speak to us",
+    "requestTitle": "If you want a quick solution",
+    "requestSubtitle": "Please speak to us",
+    "confirmation": "The question will be sent to the nurse",
+    "patientHeader": "Current Cumulative Requests: ",
+    "patientHeaderWaiting": "Waiting: ",
+    "patientHeaderProcess": "In Process: ",
+    "patientHeaderDone": "Completed: ",
+
+    "patientRecordingRecordYourVoice": "Recording your voice",
+    "patientRecordingCancelButton": "Cancel",
+    "patientRecordingFinishButton": "Finish",
+
+    "patientFinishedRecordingHeader": "Recording finished. Check the results",
+
+    "patientFinishedRecordingRecordAgainBeforeRedRecordAgain": "If you want to edit, press",
+    "patientFinishedRecordingRecordAgainRedRecordAgainButton": "Record Again",
+    "patientFinishedRecordingRecordAgainAfterRedRecordAgain": "for voice recording or edit directly with keyboard",
+
+    "patientFinishedRecordingClickToEditText": "Click the box below for editing with keyboard directly",
+
+    "patientFinishedRecordingCancelButton": "Cancel",
+    "patientFinishedRecordingRecordAgainButton": "Record Again",
+    "patientFinishedRecordingFinishButton": "Finish"
+  },
+
+  "nurse": {
+    "CareMinder": "CareMinder",
+    "welcomeText": "WELCOME to CareMinder",
+    "nurseLoginInStatusSuccess": "Login Successful",
+    "nurseLoginInStatusError": "Login Failed",
+    "nurseLoginInStatusToManyAttempts": "Too Many Attempts",
+    "nurseLogin": "Login",
+
+    "nurseHeaderBack": "Back",
+
+    "settingsTitle": "Show Process of Patent Care",
+    "settingsNFC": "Use NFC Tagging Feature",
+    "editHospital": "Edit Hospital Introduction",
+    "settingsHospitalTitle": "Bold Text",
+    "settingsHospitalSubtitle": "Thin Text",
+    "editNotification": "Edit Notification",
+    "setTable": "Set Table",
+    "changeArea": "Change Area",
+    "changeName": "Change Name",
+    "data.nurse.settingsSubmit": "Submit",
+    "data.nurse.settingsCancel": "Cancel",
+
+    "required": "*",
+
+    "username": "Username",
+    "first_name": "First Name",
+    "last_name": "Last Name",
+    "companyID": "Company ID",
+    "ID": "ID",
+    "password": "Password",
+    "nfcData": "NFC Data",
+    "role": "Role",
+    "type": "Type",
+    "roles": ["Careworker", "Patient"],
+    "types": ["Doctor", "Nurse", "Helper"],
+
+    "nurseStaffUserListHeader": "Query User Information",
+    "nurseStaffUserListSubtitle": "Double-click on the nursing staff information to find out more about the nursing staff. You can add users by pressing the plus button.",
+
+    "nurseStaffIDHeader": "No.",
+    "nurseStaffName": "Name",
+    "nurseStaffCompanyId": "Company ID",
+
+    "nurseHomeTitleViewPatientRequests": "View patient-specific requests",
+    "nurseHomeTitleViewPatient": "Set progress by patient",
+
+    "nurseHomeGlobalRequestsHeader": "Waiting patient request",
+    "nurseHomeMyRequestHeader": "Requests I'm working on",
+
+    "filterByJob": "By Job",
+    "filterByPatient": "By Patient",
+    "filterByArea": "By Area",
+
+    "areaHeader": "Add an Area",
+    "setArea": "Set and Area",
+    "addTabletArea": "Area of Tablet",
+    "addTabletNameOfTablet": "Name of tablet",
+    "addTabletHeader": "Add Tablet",
+
+    "editAreaHeader": "Edit Area",
+    "editTabletHeader": "Edit Tablet",
+
+
+    "editButtonsSave": "Save",
+    "editButtonsSaveAndAddAnother": "Save and add another",
+    "editButtonsSaveAndReturn": "Save and return",
+    "editButtonsCancel": "Cancel",
+
+    "settingsName": "Name",
+    "settingsArea": "Area",
+    "settingsTablet": "Tablet"
+
+  }
+}

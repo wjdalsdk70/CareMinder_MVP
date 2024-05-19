@@ -1,0 +1,1319 @@
+openapi: 3.0.2
+info:
+  title: ''
+  version: ''
+paths:
+  /api/patients/:
+    get:
+      operationId: listPatients
+      description: ''
+      parameters: []
+      responses:
+        '200':
+          content:
+            application/json:
+              schema:
+                type: array
+                items:
+                  $ref: '#/components/schemas/Patient'
+          description: ''
+      tags:
+      - api
+    post:
+      operationId: createPatient
+      description: ''
+      parameters: []
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/Patient'
+          application/x-www-form-urlencoded:
+            schema:
+              $ref: '#/components/schemas/Patient'
+          multipart/form-data:
+            schema:
+              $ref: '#/components/schemas/Patient'
+      responses:
+        '201':
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Patient'
+          description: ''
+      tags:
+      - api
+  /api/patients/{id}/:
+    get:
+      operationId: retrievePatient
+      description: ''
+      parameters:
+      - name: id
+        in: path
+        required: true
+        description: A unique integer value identifying this patient.
+        schema:
+          type: string
+      responses:
+        '200':
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Patient'
+          description: ''
+      tags:
+      - api
+    put:
+      operationId: updatePatient
+      description: ''
+      parameters:
+      - name: id
+        in: path
+        required: true
+        description: A unique integer value identifying this patient.
+        schema:
+          type: string
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/Patient'
+          application/x-www-form-urlencoded:
+            schema:
+              $ref: '#/components/schemas/Patient'
+          multipart/form-data:
+            schema:
+              $ref: '#/components/schemas/Patient'
+      responses:
+        '200':
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Patient'
+          description: ''
+      tags:
+      - api
+    patch:
+      operationId: partialUpdatePatient
+      description: ''
+      parameters:
+      - name: id
+        in: path
+        required: true
+        description: A unique integer value identifying this patient.
+        schema:
+          type: string
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/Patient'
+          application/x-www-form-urlencoded:
+            schema:
+              $ref: '#/components/schemas/Patient'
+          multipart/form-data:
+            schema:
+              $ref: '#/components/schemas/Patient'
+      responses:
+        '200':
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Patient'
+          description: ''
+      tags:
+      - api
+    delete:
+      operationId: destroyPatient
+      description: ''
+      parameters:
+      - name: id
+        in: path
+        required: true
+        description: A unique integer value identifying this patient.
+        schema:
+          type: string
+      responses:
+        '204':
+          description: ''
+      tags:
+      - api
+  /api/patients/{patient_pk}/medical_examinations/:
+    get:
+      operationId: listMedicalExaminations
+      description: ''
+      parameters:
+      - name: patient_pk
+        in: path
+        required: true
+        description: ''
+        schema:
+          type: string
+      responses:
+        '200':
+          content:
+            application/json:
+              schema:
+                type: array
+                items:
+                  $ref: '#/components/schemas/MedicalExamination'
+          description: ''
+      tags:
+      - api
+    post:
+      operationId: createMedicalExamination
+      description: ''
+      parameters:
+      - name: patient_pk
+        in: path
+        required: true
+        description: ''
+        schema:
+          type: string
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/MedicalExamination'
+          application/x-www-form-urlencoded:
+            schema:
+              $ref: '#/components/schemas/MedicalExamination'
+          multipart/form-data:
+            schema:
+              $ref: '#/components/schemas/MedicalExamination'
+      responses:
+        '201':
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/MedicalExamination'
+          description: ''
+      tags:
+      - api
+  /api/patients/{patient_pk}/medical_examinations/{id}/:
+    get:
+      operationId: retrieveMedicalExamination
+      description: ''
+      parameters:
+      - name: patient_pk
+        in: path
+        required: true
+        description: ''
+        schema:
+          type: string
+      - name: id
+        in: path
+        required: true
+        description: ''
+        schema:
+          type: string
+      responses:
+        '200':
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/MedicalExamination'
+          description: ''
+      tags:
+      - api
+    put:
+      operationId: updateMedicalExamination
+      description: ''
+      parameters:
+      - name: patient_pk
+        in: path
+        required: true
+        description: ''
+        schema:
+          type: string
+      - name: id
+        in: path
+        required: true
+        description: ''
+        schema:
+          type: string
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/MedicalExamination'
+          application/x-www-form-urlencoded:
+            schema:
+              $ref: '#/components/schemas/MedicalExamination'
+          multipart/form-data:
+            schema:
+              $ref: '#/components/schemas/MedicalExamination'
+      responses:
+        '200':
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/MedicalExamination'
+          description: ''
+      tags:
+      - api
+    patch:
+      operationId: partialUpdateMedicalExamination
+      description: ''
+      parameters:
+      - name: patient_pk
+        in: path
+        required: true
+        description: ''
+        schema:
+          type: string
+      - name: id
+        in: path
+        required: true
+        description: ''
+        schema:
+          type: string
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/MedicalExamination'
+          application/x-www-form-urlencoded:
+            schema:
+              $ref: '#/components/schemas/MedicalExamination'
+          multipart/form-data:
+            schema:
+              $ref: '#/components/schemas/MedicalExamination'
+      responses:
+        '200':
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/MedicalExamination'
+          description: ''
+      tags:
+      - api
+    delete:
+      operationId: destroyMedicalExamination
+      description: ''
+      parameters:
+      - name: patient_pk
+        in: path
+        required: true
+        description: ''
+        schema:
+          type: string
+      - name: id
+        in: path
+        required: true
+        description: ''
+        schema:
+          type: string
+      responses:
+        '204':
+          description: ''
+      tags:
+      - api
+  /api/requests/:
+    get:
+      operationId: listRequests
+      description: ''
+      parameters: []
+      responses:
+        '200':
+          content:
+            application/json:
+              schema:
+                type: array
+                items:
+                  $ref: '#/components/schemas/Request'
+          description: ''
+      tags:
+      - api
+    post:
+      operationId: createRequest
+      description: ''
+      parameters: []
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/Request'
+          application/x-www-form-urlencoded:
+            schema:
+              $ref: '#/components/schemas/Request'
+          multipart/form-data:
+            schema:
+              $ref: '#/components/schemas/Request'
+      responses:
+        '201':
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Request'
+          description: ''
+      tags:
+      - api
+  /api/requests/{id}/:
+    get:
+      operationId: retrieveRequest
+      description: ''
+      parameters:
+      - name: id
+        in: path
+        required: true
+        description: A unique integer value identifying this request.
+        schema:
+          type: string
+      responses:
+        '200':
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Request'
+          description: ''
+      tags:
+      - api
+    put:
+      operationId: updateRequest
+      description: ''
+      parameters:
+      - name: id
+        in: path
+        required: true
+        description: A unique integer value identifying this request.
+        schema:
+          type: string
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/Request'
+          application/x-www-form-urlencoded:
+            schema:
+              $ref: '#/components/schemas/Request'
+          multipart/form-data:
+            schema:
+              $ref: '#/components/schemas/Request'
+      responses:
+        '200':
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Request'
+          description: ''
+      tags:
+      - api
+    patch:
+      operationId: partialUpdateRequest
+      description: ''
+      parameters:
+      - name: id
+        in: path
+        required: true
+        description: A unique integer value identifying this request.
+        schema:
+          type: string
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/Request'
+          application/x-www-form-urlencoded:
+            schema:
+              $ref: '#/components/schemas/Request'
+          multipart/form-data:
+            schema:
+              $ref: '#/components/schemas/Request'
+      responses:
+        '200':
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Request'
+          description: ''
+      tags:
+      - api
+    delete:
+      operationId: destroyRequest
+      description: ''
+      parameters:
+      - name: id
+        in: path
+        required: true
+        description: A unique integer value identifying this request.
+        schema:
+          type: string
+      responses:
+        '204':
+          description: ''
+      tags:
+      - api
+  /api/requests/{request_pk}/chat_messages/:
+    get:
+      operationId: listChatMessages
+      description: ''
+      parameters:
+      - name: request_pk
+        in: path
+        required: true
+        description: ''
+        schema:
+          type: string
+      responses:
+        '200':
+          content:
+            application/json:
+              schema:
+                type: array
+                items:
+                  $ref: '#/components/schemas/ChatMessage'
+          description: ''
+      tags:
+      - api
+    post:
+      operationId: createChatMessage
+      description: ''
+      parameters:
+      - name: request_pk
+        in: path
+        required: true
+        description: ''
+        schema:
+          type: string
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/ChatMessage'
+          application/x-www-form-urlencoded:
+            schema:
+              $ref: '#/components/schemas/ChatMessage'
+          multipart/form-data:
+            schema:
+              $ref: '#/components/schemas/ChatMessage'
+      responses:
+        '201':
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/ChatMessage'
+          description: ''
+      tags:
+      - api
+  /api/requests/{request_pk}/chat_messages/{id}/:
+    get:
+      operationId: retrieveChatMessage
+      description: ''
+      parameters:
+      - name: request_pk
+        in: path
+        required: true
+        description: ''
+        schema:
+          type: string
+      - name: id
+        in: path
+        required: true
+        description: A unique integer value identifying this chat message.
+        schema:
+          type: string
+      responses:
+        '200':
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Request'
+          description: ''
+      tags:
+      - api
+    put:
+      operationId: updateChatMessage
+      description: ''
+      parameters:
+      - name: request_pk
+        in: path
+        required: true
+        description: ''
+        schema:
+          type: string
+      - name: id
+        in: path
+        required: true
+        description: A unique integer value identifying this chat message.
+        schema:
+          type: string
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/Request'
+          application/x-www-form-urlencoded:
+            schema:
+              $ref: '#/components/schemas/Request'
+          multipart/form-data:
+            schema:
+              $ref: '#/components/schemas/Request'
+      responses:
+        '200':
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Request'
+          description: ''
+      tags:
+      - api
+    patch:
+      operationId: partialUpdateChatMessage
+      description: ''
+      parameters:
+      - name: request_pk
+        in: path
+        required: true
+        description: ''
+        schema:
+          type: string
+      - name: id
+        in: path
+        required: true
+        description: A unique integer value identifying this chat message.
+        schema:
+          type: string
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/Request'
+          application/x-www-form-urlencoded:
+            schema:
+              $ref: '#/components/schemas/Request'
+          multipart/form-data:
+            schema:
+              $ref: '#/components/schemas/Request'
+      responses:
+        '200':
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Request'
+          description: ''
+      tags:
+      - api
+    delete:
+      operationId: destroyChatMessage
+      description: ''
+      parameters:
+      - name: request_pk
+        in: path
+        required: true
+        description: ''
+        schema:
+          type: string
+      - name: id
+        in: path
+        required: true
+        description: A unique integer value identifying this chat message.
+        schema:
+          type: string
+      responses:
+        '204':
+          description: ''
+      tags:
+      - api
+  /api/tablets/:
+    get:
+      operationId: listTablets
+      description: ''
+      parameters: []
+      responses:
+        '200':
+          content:
+            application/json:
+              schema:
+                type: array
+                items:
+                  $ref: '#/components/schemas/Tablet'
+          description: ''
+      tags:
+      - api
+    post:
+      operationId: createTablet
+      description: ''
+      parameters: []
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/Tablet'
+          application/x-www-form-urlencoded:
+            schema:
+              $ref: '#/components/schemas/Tablet'
+          multipart/form-data:
+            schema:
+              $ref: '#/components/schemas/Tablet'
+      responses:
+        '201':
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Tablet'
+          description: ''
+      tags:
+      - api
+  /api/tablets/{id}/:
+    get:
+      operationId: retrieveTablet
+      description: ''
+      parameters:
+      - name: id
+        in: path
+        required: true
+        description: A unique integer value identifying this tablet.
+        schema:
+          type: string
+      responses:
+        '200':
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Tablet'
+          description: ''
+      tags:
+      - api
+    put:
+      operationId: updateTablet
+      description: ''
+      parameters:
+      - name: id
+        in: path
+        required: true
+        description: A unique integer value identifying this tablet.
+        schema:
+          type: string
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/Tablet'
+          application/x-www-form-urlencoded:
+            schema:
+              $ref: '#/components/schemas/Tablet'
+          multipart/form-data:
+            schema:
+              $ref: '#/components/schemas/Tablet'
+      responses:
+        '200':
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Tablet'
+          description: ''
+      tags:
+      - api
+    patch:
+      operationId: partialUpdateTablet
+      description: ''
+      parameters:
+      - name: id
+        in: path
+        required: true
+        description: A unique integer value identifying this tablet.
+        schema:
+          type: string
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/Tablet'
+          application/x-www-form-urlencoded:
+            schema:
+              $ref: '#/components/schemas/Tablet'
+          multipart/form-data:
+            schema:
+              $ref: '#/components/schemas/Tablet'
+      responses:
+        '200':
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Tablet'
+          description: ''
+      tags:
+      - api
+    delete:
+      operationId: destroyTablet
+      description: ''
+      parameters:
+      - name: id
+        in: path
+        required: true
+        description: A unique integer value identifying this tablet.
+        schema:
+          type: string
+      responses:
+        '204':
+          description: ''
+      tags:
+      - api
+  /api/staffs/:
+    get:
+      operationId: listStaffs
+      description: ''
+      parameters: []
+      responses:
+        '200':
+          content:
+            application/json:
+              schema:
+                type: array
+                items:
+                  $ref: '#/components/schemas/Staff'
+          description: ''
+      tags:
+      - api
+    post:
+      operationId: createStaff
+      description: ''
+      parameters: []
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/Staff'
+          application/x-www-form-urlencoded:
+            schema:
+              $ref: '#/components/schemas/Staff'
+          multipart/form-data:
+            schema:
+              $ref: '#/components/schemas/Staff'
+      responses:
+        '201':
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Staff'
+          description: ''
+      tags:
+      - api
+  /api/staffs/{id}/:
+    get:
+      operationId: retrieveStaff
+      description: ''
+      parameters:
+      - name: id
+        in: path
+        required: true
+        description: A unique integer value identifying this user.
+        schema:
+          type: string
+      responses:
+        '200':
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Staff'
+          description: ''
+      tags:
+      - api
+    put:
+      operationId: updateStaff
+      description: ''
+      parameters:
+      - name: id
+        in: path
+        required: true
+        description: A unique integer value identifying this user.
+        schema:
+          type: string
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/Staff'
+          application/x-www-form-urlencoded:
+            schema:
+              $ref: '#/components/schemas/Staff'
+          multipart/form-data:
+            schema:
+              $ref: '#/components/schemas/Staff'
+      responses:
+        '200':
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Staff'
+          description: ''
+      tags:
+      - api
+    patch:
+      operationId: partialUpdateStaff
+      description: ''
+      parameters:
+      - name: id
+        in: path
+        required: true
+        description: A unique integer value identifying this user.
+        schema:
+          type: string
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/Staff'
+          application/x-www-form-urlencoded:
+            schema:
+              $ref: '#/components/schemas/Staff'
+          multipart/form-data:
+            schema:
+              $ref: '#/components/schemas/Staff'
+      responses:
+        '200':
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Staff'
+          description: ''
+      tags:
+      - api
+    delete:
+      operationId: destroyStaff
+      description: ''
+      parameters:
+      - name: id
+        in: path
+        required: true
+        description: A unique integer value identifying this user.
+        schema:
+          type: string
+      responses:
+        '204':
+          description: ''
+      tags:
+      - api
+  /api/tablets/login/:
+    post:
+      operationId: createTabletTokenObtainPair
+      description: ''
+      parameters: []
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/TabletTokenObtainPair'
+          application/x-www-form-urlencoded:
+            schema:
+              $ref: '#/components/schemas/TabletTokenObtainPair'
+          multipart/form-data:
+            schema:
+              $ref: '#/components/schemas/TabletTokenObtainPair'
+      responses:
+        '201':
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/TabletTokenObtainPair'
+          description: ''
+      tags:
+      - api
+  /api/staffs/login/:
+    post:
+      operationId: createTokenObtainPair
+      description: 'Takes a set of user credentials and returns an access and refresh
+        JSON web
+
+        token pair to prove the authentication of those credentials.'
+      parameters: []
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/TokenObtainPair'
+          application/x-www-form-urlencoded:
+            schema:
+              $ref: '#/components/schemas/TokenObtainPair'
+          multipart/form-data:
+            schema:
+              $ref: '#/components/schemas/TokenObtainPair'
+      responses:
+        '201':
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/TokenObtainPair'
+          description: ''
+      tags:
+      - api
+  /api/token/blacklist/:
+    post:
+      operationId: createTokenBlacklist
+      description: 'Takes a token and blacklists it. Must be used with the
+
+        `rest_framework_simplejwt.token_blacklist` app installed.'
+      parameters: []
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/TokenBlacklist'
+          application/x-www-form-urlencoded:
+            schema:
+              $ref: '#/components/schemas/TokenBlacklist'
+          multipart/form-data:
+            schema:
+              $ref: '#/components/schemas/TokenBlacklist'
+      responses:
+        '201':
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/TokenBlacklist'
+          description: ''
+      tags:
+      - api
+  /api/token/refresh/:
+    post:
+      operationId: createTokenRefresh
+      description: 'Takes a refresh type JSON web token and returns an access type
+        JSON web
+
+        token if the refresh token is valid.'
+      parameters: []
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/TokenRefresh'
+          application/x-www-form-urlencoded:
+            schema:
+              $ref: '#/components/schemas/TokenRefresh'
+          multipart/form-data:
+            schema:
+              $ref: '#/components/schemas/TokenRefresh'
+      responses:
+        '201':
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/TokenRefresh'
+          description: ''
+      tags:
+      - api
+components:
+  schemas:
+    Patient:
+      type: object
+      properties:
+        id:
+          type: integer
+          readOnly: true
+        first_name:
+          type: string
+          nullable: true
+          maxLength: 255
+        last_name:
+          type: string
+          nullable: true
+          maxLength: 255
+        age:
+          type: integer
+          nullable: true
+        doctor_first_visit:
+          type: boolean
+        hospitalization:
+          enum:
+          - 0
+          - 1
+          - 2
+          type: integer
+    MedicalExamination:
+      type: object
+      properties:
+        id:
+          type: integer
+          readOnly: true
+        name:
+          type: string
+          maxLength: 255
+        state:
+          enum:
+          - 0
+          - 1
+          - 2
+          type: integer
+        time:
+          type: string
+          format: date-time
+          nullable: true
+      required:
+      - name
+    Request:
+      type: object
+      properties:
+        id:
+          type: integer
+          readOnly: true
+        text:
+          type: string
+        recording:
+          type: string
+          readOnly: true
+          nullable: true
+        for_role:
+          enum:
+          - 0
+          - 1
+          type: integer
+        is_question:
+          type: boolean
+        state:
+          enum:
+          - 0
+          - 1
+          - 2
+          type: integer
+        time:
+          type: string
+          format: date-time
+          readOnly: true
+        response:
+          type: string
+          nullable: true
+        response_time:
+          type: string
+          format: date-time
+          nullable: true
+        tablet_id:
+          type: integer
+      required:
+      - text
+      - for_role
+      - is_question
+      - tablet_id
+    ChatMessage:
+      type: object
+      properties:
+        id:
+          type: integer
+          readOnly: true
+        text:
+          type: string
+        time:
+          type: string
+          format: date-time
+          readOnly: true
+        from_patient:
+          type: boolean
+      required:
+      - text
+      - from_patient
+    Tablet:
+      type: object
+      properties:
+        id:
+          type: integer
+          readOnly: true
+        patient:
+          type: object
+          properties:
+            id:
+              type: integer
+              readOnly: true
+            first_name:
+              type: string
+              nullable: true
+              maxLength: 255
+            last_name:
+              type: string
+              nullable: true
+              maxLength: 255
+            age:
+              type: integer
+              nullable: true
+            doctor_first_visit:
+              type: boolean
+            hospitalization:
+              enum:
+              - 0
+              - 1
+              - 2
+              type: integer
+          readOnly: true
+        patient_id:
+          type: integer
+          writeOnly: true
+        room:
+          type: string
+          maxLength: 255
+        doctor:
+          type: object
+          properties:
+            id:
+              type: integer
+              readOnly: true
+            username:
+              type: string
+              description: Required. 150 characters or fewer. Letters, digits and
+                @/./+/-/_ only.
+              pattern: ^[\w.@+-]+\z
+              maxLength: 150
+            password:
+              type: string
+              writeOnly: true
+              maxLength: 128
+            nfc:
+              type: string
+              writeOnly: true
+              nullable: true
+              maxLength: 256
+            first_name:
+              type: string
+              maxLength: 150
+            last_name:
+              type: string
+              maxLength: 150
+            role:
+              enum:
+              - 0
+              - 1
+              type: integer
+              nullable: true
+            type:
+              enum:
+              - 0
+              - 1
+              - 2
+              type: integer
+              nullable: true
+          required:
+          - username
+          - password
+          readOnly: true
+        doctor_id:
+          type: integer
+          writeOnly: true
+        nurse:
+          type: object
+          properties:
+            id:
+              type: integer
+              readOnly: true
+            username:
+              type: string
+              description: Required. 150 characters or fewer. Letters, digits and
+                @/./+/-/_ only.
+              pattern: ^[\w.@+-]+\z
+              maxLength: 150
+            password:
+              type: string
+              writeOnly: true
+              maxLength: 128
+            nfc:
+              type: string
+              writeOnly: true
+              nullable: true
+              maxLength: 256
+            first_name:
+              type: string
+              maxLength: 150
+            last_name:
+              type: string
+              maxLength: 150
+            role:
+              enum:
+              - 0
+              - 1
+              type: integer
+              nullable: true
+            type:
+              enum:
+              - 0
+              - 1
+              - 2
+              type: integer
+              nullable: true
+          required:
+          - username
+          - password
+          readOnly: true
+        nurse_id:
+          type: integer
+          writeOnly: true
+      required:
+      - room
+    Staff:
+      type: object
+      properties:
+        id:
+          type: integer
+          readOnly: true
+        username:
+          type: string
+          description: Required. 150 characters or fewer. Letters, digits and @/./+/-/_
+            only.
+          pattern: ^[\w.@+-]+\z
+          maxLength: 150
+        password:
+          type: string
+          writeOnly: true
+          maxLength: 128
+        nfc:
+          type: string
+          writeOnly: true
+          nullable: true
+          maxLength: 256
+        first_name:
+          type: string
+          maxLength: 150
+        last_name:
+          type: string
+          maxLength: 150
+        role:
+          enum:
+          - 0
+          - 1
+          type: integer
+          nullable: true
+        type:
+          enum:
+          - 0
+          - 1
+          - 2
+          type: integer
+          nullable: true
+      required:
+      - username
+      - password
+    TabletTokenObtainPair:
+      type: object
+      properties:
+        username:
+          type: string
+        password:
+          type: string
+          writeOnly: true
+      required:
+      - username
+      - password
+    TokenObtainPair:
+      type: object
+      properties:
+        username:
+          type: string
+        password:
+          type: string
+          writeOnly: true
+      required:
+      - username
+      - password
+    TokenBlacklist:
+      type: object
+      properties:
+        refresh:
+          type: string
+      required:
+      - refresh
+    TokenRefresh:
+      type: object
+      properties:
+        refresh:
+          type: string
+        access:
+          type: string
+          readOnly: true
+      required:
+      - refresh

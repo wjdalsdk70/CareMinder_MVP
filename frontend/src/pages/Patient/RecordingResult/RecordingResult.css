@@ -1,0 +1,94 @@
+.header {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: auto;
+    display: flex;
+    align-items: center;
+    padding: 16px;
+    overflow: hidden;
+}
+
+.header .left{
+    display: flex;
+    flex-direction: column;
+    padding: 0px;
+    margin: 5px;
+}
+
+.body {
+    display: flex;
+    justify-content: center;
+    margin: 13rem;
+    text-align: center;
+    overflow: hidden;
+
+}
+
+.check {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    gap: 1rem; 
+    margin-bottom: 1rem;
+
+}
+
+.textArea {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Center content horizontally */
+    justify-content: center; /* Center content vertically */
+    background-color: var(--text-background-light);
+    margin: 10px;
+    border-radius: 10px;
+  }
+  
+  .textArea-text {
+    margin-top: 10px;
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+  
+  }
+
+  .textArea-text h2 {
+    font-weight: 1000;
+  }
+  
+  .textArea-container {
+    margin-top: 20px; /* Adjust the top margin as needed */
+  }
+
+textarea {
+    width: 60rem;
+    height: 15rem;
+    border-radius: 10px;
+    border-style: none;
+    padding: 10px;
+    margin: 10px;
+    font-size: 20px;
+    font-family: "NanumSquare";
+    text-align: center;
+    resize: none;
+    line-height: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+  .buttons {
+    display: flex;
+    flex-direction: row;
+    margin: 1px;
+    justify-content: center;
+  }
+  
+  .record-button {
+    margin: 5px;
+    width: 40%;
+    height: 20%;
+  }
+

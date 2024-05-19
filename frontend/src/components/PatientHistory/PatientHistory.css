@@ -1,0 +1,67 @@
+.patient-history {
+  position: absolute;
+  top: 0;
+  left: 100vw;
+  background-color: var(--background-glass);
+  backdrop-filter: var(--background-glass-blur);
+  height: 100vh;
+  width: 40%;
+  padding: 45px 40px;
+  transition: transform 500ms;
+}
+
+.patient-history.active {
+  transform: translateX(-100%);
+}
+
+.patient-history__title {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  height: 60px;
+  gap: 32px;
+}
+
+.patient-history__title__icon,
+.patient-history__title h1 {
+  color: white;
+  font-weight: 700;
+}
+
+.patient-history__button__icon {
+  transition: transform 500ms;
+}
+
+.patient-history__button__icon.active {
+  transform: rotate(180deg);
+}
+
+.patient-history__button {
+  background-color: var(--text-background-lighter);
+  width: 3.5vw;
+  height: 7vw;
+  border-top-left-radius: 510px;
+  border-bottom-left-radius: 510px;
+  position: absolute;
+  top: 50%;
+  left: 0;
+  transform: translate(-100%, -50%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  user-select: none;
+}
+
+.patient-history__requests {
+  height: 95%;
+  overflow-y: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.patient-history__notification {
+  top: 0.5rem !important;
+  left: 0.5rem !important;
+}

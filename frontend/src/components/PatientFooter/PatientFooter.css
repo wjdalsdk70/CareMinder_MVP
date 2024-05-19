@@ -1,0 +1,19 @@
+.footer {
+  width: 100vw;
+  height: var(--footer-height);
+  overflow: hidden;
+  padding: 16px;
+  position: fixed;
+  bottom: 0;
+  z-index: -1;
+}
+
+.footer__container {
+  border-top: 1px solid black;
+  height: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 16px;
+}
