@@ -40,7 +40,7 @@ export default function RecordingResult({ session }) {
     try {      
       const aiResult = await ai(text);
       setLabel(aiResult.label);
-      console.log(aiResult);
+      console.log(aiResult.label);
     } catch (error) {
       console.error('Error in processing AI or navigating:', error);
     }
