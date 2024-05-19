@@ -72,7 +72,7 @@ export default function Request({
 
   async function getTabletName() {
     try {
-      console.log(request.tablet_id);
+      console.log(request);
       const tablet = await getTablet(request.tablet_id)
       console.log(tablet);
       setTabletName(tablet.name);
@@ -120,10 +120,10 @@ export default function Request({
   return (
     <div
       key={request.id}
-      className={`request-item ${getStateText(request.state)}`}
+      className={`request-item ${getStateText(request.for_type)}`}
     >
       <div
-        className={`top-container ${getStateText(request.state)}`}
+        className={`top-container ${getStateText(request.for_type)}`}
         onClick={handleClick}
       >
         {newMessageCount > 0 && (

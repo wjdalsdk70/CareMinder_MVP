@@ -21,7 +21,7 @@ export default function RecordingResult({ session }) {
   const isQuestion = localStorage.getItem("isQuestion");
   const [tablet, setTablet] = useLocalStorage("tablet", {});
   const [text, setText] = useState(transcript);
-  const [label, setLabel] = useState(10);
+  const [label, setLabel] = useState(0);
 
   const handleRecordAgainClick = () => {
     handlePostRequest().then((r) => navigate("/patient/recording"));
@@ -56,7 +56,7 @@ export default function RecordingResult({ session }) {
       if (isQuestion === "true") {
         await postRequest(session, text, true, 0, tablet.id, label);
       } else {
-        await postRequest(session, text, false, 0, tablet.id, 1);
+        await postRequest(session, text, false, 0, tablet.id, label);
       }
     } catch (error) {
       console.error(error);
