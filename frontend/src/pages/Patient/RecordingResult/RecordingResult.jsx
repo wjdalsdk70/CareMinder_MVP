@@ -39,8 +39,13 @@ export default function RecordingResult({ session }) {
   async function handleAI(){
     try {      
       const aiResult = await ai(text);
-      setLabel(aiResult.label);
-      console.log(aiResult.label);
+      if (aiResult.length > 0 && aiResult[0].label !== undefined) {
+        setLabel(aiResult[0].label);  
+        console.log(aiResult);
+        console.log(aiResult[0].label); 
+      } else {
+        console.error('No results or label is undefined');
+      }
     } catch (error) {
       console.error('Error in processing AI or navigating:', error);
     }
@@ -49,7 +54,7 @@ export default function RecordingResult({ session }) {
   async function handlePostRequest() {
     try {
       if (isQuestion === "true") {
-        await postRequest(session, text, true, 0, tablet.id, 1);
+        await postRequest(session, text, true, 0, tablet.id, label);
       } else {
         await postRequest(session, text, false, 0, tablet.id, 1);
       }

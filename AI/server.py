@@ -33,7 +33,7 @@ def classify_request():
         with torch.no_grad():
             outputs = model(**inputs)
             predictions = torch.argmax(outputs.logits, dim=1)
-        classifications.append({'request': request_text, 'prediction': predictions.item()})
+        classifications.append({'request': request_text, 'label': predictions.item()})
 
     return jsonify(classifications)
 
