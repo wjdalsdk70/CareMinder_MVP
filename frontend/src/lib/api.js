@@ -5,7 +5,7 @@ const BASE_URL = "https://careminder.shop/api";
 // const BASE_URL = "http://15.164.47.170:8000/api"
 
 export async function ai(text) {
-  const response = await fetch(`http://127.0.0.1:5000/classify`, {
+  const response = await fetch(`http://127.0.0.1:8000/classify`, {
     method: "POST",
     headers: {
       "content-type": "application/json",
