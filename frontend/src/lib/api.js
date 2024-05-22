@@ -2,10 +2,11 @@ import useSession from "../hooks/useSession";
 import { authFetch } from "../core/api";
 
 const BASE_URL = "https://careminder.shop/api";
-// const BASE_URL = "http://15.164.47.170:8000/api"
+// const BASE_URL = "http://15.164.47.170:8000/classify"
+// https://careminder.shop/ai/classify/
 
 export async function ai(text) {
-  const response = await fetch(`https://careminder.shop/ai/classify`, {
+  const response = await fetch(`http://localhost:8000/classify`, {
     method: "POST",
     headers: {
       "content-type": "application/json",
