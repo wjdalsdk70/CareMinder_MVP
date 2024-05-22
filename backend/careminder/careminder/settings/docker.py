@@ -1,6 +1,6 @@
 from .base import *
 
-ALLOWED_HOSTS = ["localhost", "43.200.196.223","careminder.shop","www.careminder.shop"]
+ALLOWED_HOSTS = ["localhost", "43.203.5.18","careminder.shop","www.careminder.shop"]
 
 DATABASES = {
     'default': {
@@ -14,14 +14,14 @@ DATABASES = {
 }
 
 CORS_ORIGIN_WHITELIST = [
-    'http://43.200.196.223:5000',
-    'http://43.200.196.223:5500',
+    'http://43.203.5.18:5000',
+    'http://43.203.5.18:5500',
     'https://careminder.shop',
     'http://careminder.shop'
 ]
 
 CSRF_TRUSTED_ORIGINS = [
-    'http://43.200.196.223:5500'
+    'http://43.203.5.18:5500'
     'https://careminder.shop',
     'http://careminder.shop'
 ]
